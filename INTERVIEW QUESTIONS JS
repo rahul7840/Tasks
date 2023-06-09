@@ -7,11 +7,8 @@
 
 // let b =[20,10];
 
- 
-
-// console.log(a[0]==b[1])
-
-// console.log(a[0]===b[0])
+// console.log(a[0]==b[1])    //o/p => true 
+// console.log(a[0]===b[0])   //o/p => false
 
  
 
@@ -19,7 +16,7 @@
 
 // let d= false
 
-// console.log(c+d)
+// console.log(c+d)  //o/p => 11
 
  
 
@@ -47,7 +44,7 @@
 
 // let h={name:"rahul"}
 
-// console.log(delete h)  if only h then false becoude var,let ,const can be delete  but proprtties can when h.name then true output will be
+// console.log(delete h)  if only h then false becoude var,let ,const cant be delete  but proprtties can when h.name then true output will be
 
  
 
@@ -75,7 +72,7 @@
 
 // var rrr = { info, ...detail };
 
-// console.log(rrr);
+// console.log(rrr);  // o/p=> join both obj
 
  
 
@@ -87,11 +84,11 @@
 
 // if (false || true) {
 
-//   console.log("i am rahul");
+//   console.log("i am true");
 
 // } else {
 
-//   console.log("i am boom");
+//   console.log("i am false");
 
 // } // o/p i m rahul
 
@@ -103,8 +100,8 @@
 
 
 //--- javascript--for--of------
-//dec:- also we can say this use to extrect {key:"value"} value from onj
-//      but we cant directly extract value we need to Object.values(filedName) need to define
+//dec:- also we can say this use to extrect from  {key:"value"} value from onj
+//      but we *cant* directly extract value we need to Object.values(filedName) need to define
 const arr=["one","two","tree","four"]
 for(var num of arr){
 console.log(num)
