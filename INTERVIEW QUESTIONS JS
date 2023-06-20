@@ -494,5 +494,97 @@ class gun{
 
                 console.log(miss(array));
 
+
+
+// get even and odd number from the array
+            const number =[7,55,1,2,6,9,8,2,3,4,85]
+
+            function gnretEven(arr){
+                const even =arr.filter((ele)=>ele%2===0)
+                const odd =arr.filter((ele)=>ele%2===1)
+                return 'this are even '+ even +'and this are odds'+odd
+            }
+
+            console.log('this is even ==>'+ gnretEven(number))  
+
+
+      
+      //How to find the sum of all elements in array  
+                  const arr=[11,44,553,22,5]
+                  function sumAll(a){
+                     let final = a.reduce((pre,cur)=>{
+                          return pre+cur
+                      })
+                      console.log(final)
+                  }
+                  console.log(sumAll(arr))
+                  // Find fectorial of any number 
+  
+  
+  
+  
+      //Fectorial the number 
+           // take number and chech is mmore the 0
+           // make logic that multiply by numbe that start from 1 and end till what ever you takes numberfrom user 
+  
+              const takeNumber= prompt('enter the number that you want to fectorial')
+              var fect=1
+              if(takeNumber<0){ alert("i cant fectorial becouse this is lesser then 0")}else{
+                  for(i=1;i<=takeNumber;i++){
+                      fect=fect*i
+                  }
+              alert(`Fectorial of ${takeNumber} is   -->${fect}`)
+              }
+         
+              
+  
+  
+          //check prime number or not                   
+                      const takeNumber = prompt("Enter the number")
+  
+                      if(takeNumber==1){
+                          alert("cant set 1 for checking the prime number")
+                      } else if(takeNumber<0){
+                          alert(" checking the prime number  foe negetive value")
+                      }else{
+                          for(i=2;i<takeNumber;i++){
+                              if(takeNumber%i==0){
+                                  var result = ` BOOM its prime ${takeNumber}`
+                              }else{ var result = `oops its NOT prime ${takeNumber}`}
+                          }
+                      
+                          console.log(result)
+                      }
+  
+  
+          //check your name containt vowels or not
+  
+  
+              const takeName = prompt("enter name ok")
+              const string = takeName.toLocaleLowerCase()
+  
+              if(string=='a'||string=='e'||string=='i'||string=='o'||string=='u'){
+                  console.log("your name has vovels")
+              }else{ console.log("your name dont have vovels ")}
+              
+              //method 2
+              //count the name how many vowles contains
+              
+              const takeNam = prompt("enter name ok")
+              const vowels =['a','e','i','o','u']
+              function countVowel(str){
+                  var count =0;
+                  for(let letter of str.toLocaleLowerCase()){
+                      if(vowels.includes(letter)){
+                          count++
+                      }
+                  }
+                  return count
+              }
+  
+              console.log( `you have enter ${takeNam} and your name has vowel count --> `,countVowel(takeNam))
+  
+
+
 */
 
