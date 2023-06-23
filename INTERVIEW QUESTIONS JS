@@ -583,7 +583,123 @@ class gun{
               }
   
               console.log( `you have enter ${takeNam} and your name has vowel count --> `,countVowel(takeNam))
-  
+
+
+
+
+    // reverse the given strinng                             -->//RRR
+
+                    const takeStr = prompt(`give me name that you want to recverce`);
+
+                    function vStr(arr) {
+
+                            const splitArr = arr.split(""); 
+                            const reverseArr = splitArr.reverse(); 
+                            const joinedStr = reverseArr.join(""); 
+                            return joinedStr;
+                    }
+
+                    console.log(vStr(takeStr));
+            
+        //find palindrome string  that means 'eye' is palindrom that means reverce of eye is also b eye       -->//RRR
+
+                    const takeStr = "concat"
+
+                    function checkPali(str){
+                        
+                                const spread = str.split("")
+                                const  rev = spread.reverse()
+                                const revJoin = rev.join("")
+                                if(revJoin==str){
+                                console.log('this string is palindrome')
+                                }else{
+                                console.log('this string is not')
+                                }    
+                    }
+                    console.log(checkPali(takeStr))
+
+
+        // swapping without third variable                          -->//RRR
+                                
+                    let a=1
+                    let b=2;
+
+                    //this is third var 
+                    let temp=a;
+                    a=b
+                    b=temp;
+
+                    //without third var
+
+                    [a,b]=[b,a]
+
+                    console.log(a+"and"+b)
+
+
+        //find the factors of given intiger                         -->//RRR
+
+                     const sendInt = prompt("enter the number that you want to find fectors!!!")
+                     
+                    function findFact(fac){
+                        var arr=[]
+                        for(i=2;i<fac;i++){
+                            if(fac%i==0){
+                            arr.push(i) 
+                            }
+                        }
+                        if(arr.length===0){
+                            console.log("your intiger has no factor")
+                        }else{
+                            console.log(`your int ${fac} has ${arr.length} factor`)
+                        }
+
+                        return arr
+                    }
+
+                    console.log(findFact(sendInt))
+
+
+      
+
+        //Compare two array with each other                            -->//RRR
+                    const aa = [1, 2, 3, 4, 5, 6];
+                    const bb = [5, 8, 7, 9, 6, 4];
+
+                    function isSameArray(a, b) {
+                    if (a.length !== b.length) {
+                        console.log("Your arrays are not the same (different lengths).");
+                        return false;
+                    }
+
+                    for (let i = 0; i < a.length; i++) {
+                        if (a[i] !== b[i]) {                    //compare index
+                        console.log("Your arrays are not the same (different values).");
+                        return false;
+                        }
+                    }
+
+                    console.log("Your arrays are the same.");
+                    return true;
+                    }
+
+                    console.log(isSameArray(aa, bb));
+
+
+
+        // inter sec two array  what ever is comen that wil display        -->//RRR
+                    const aa = [1, 2, 3, 4, 5, 6];
+                    const bb = [5, 8, 7, 9, 6, 4];
+
+                    function interSection(a,b){
+                    const o =[]
+                        for(i=0;i<a.length;i++){
+                        if (b.includes(a[i])) {               //check index with value
+                            o.push(a[i]);
+                        }
+                        }
+                        return o
+                    }
+                    console.log(interSection(aa,bb))
 
 
 */
