@@ -67,5 +67,16 @@
     }
     console.log(array5)
 
+// 6)
+// remove element from ARRAY also we can use splice()
+let data = [11,22,33,44,55,66]
+let position=2;
+for(i=position;i<data.length-1;i++){
+    data[i]=data[i+1]
+}
+data.length=data.length-1
+console.log(data)
+
+
 
 
