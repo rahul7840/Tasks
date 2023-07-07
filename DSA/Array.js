@@ -68,6 +68,7 @@
     console.log(array5)
 
 // 6)
+
 // remove element from ARRAY also we can use splice()
 let data = [11,22,33,44,55,66]
 let position=2;
@@ -77,6 +78,33 @@ for(i=position;i<data.length-1;i++){
 data.length=data.length-1
 console.log(data)
 
+
+//7) murging two array  without using 
+
+        // methode 1
+            const aa1= [1,2,3,4,5,6,7,8,9,0]
+            const aa2= [11,22,33,44,55,66,77,88,99,00]
+
+            function murge(a){
+            for(i=0;i<a.length;i++){
+                a.push(...aa1)
+                return a
+            }
+            }
+            console.log(murge(aa2))
+
+        // methode 2
+            let a1= [1,2,3,4,5,6,7,8,9,0]
+            let a2= [11,22,33,44,55,66,77,88,99,00]
+            let array3= []
+
+            for(i=0;i<a1.length;i++){
+                array3[i]=a1[i]
+            }
+            for(i=0;i<a2.length;i++){
+                array3[a1.length+i]=a2[i]
+            }
+            console.log(array3)
 
 
 
