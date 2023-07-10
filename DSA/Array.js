@@ -106,5 +106,56 @@ console.log(data)
             }
             console.log(array3)
 
+           //----------> sorting the array
+
+            let numbers = [10, 5, 8, 2, 4];
+            function sorting (arr){
+                let nArr=arr.slice()  // here slice is ensuring that we dont Modifying original array 
+                for(i=0;i<arr.length;i++){
+                    for(j=i+1;j<arr.length;j++){
+                        if(nArr[i]>nArr[j]){
+                            // Swap elements
+                            let temp = nArr[i]
+                            nArr[i] = nArr[j]
+                            nArr[j]= temp
+                        }
+                    }       
+                }
+               return nArr
+            }
+            console.log(sorting(numbers))
+
+          //----------->murging two array using while loop
+
+            let data1 = [5, 6, 11, 14, 20, 25, 29, 32, 36, 38, 45, 47]
+            let data2 =  [4, 17, 24, 26, 34, 35, 39, 40, 43, 46, 49]
+            let data3 =[]
+            let d1=0;
+            let d2=0;
+            let d3=0
+            while(d1 < data1.length && d2<data2.length){
+                if(data1[d1] < data2[d2]){
+
+                    data3[d3]=data1[d1]
+                    d1++
+                }else{
+                    data3[d3]=data2[d2]
+                    d2++
+                }
+                d3++
+            }
+          
+            while(d1<data1.length){
+                data3[d3]=data1[d1]
+                d3++
+                d1++
+            }
+            while(d2<data2.length){
+                data3[d3]=data2[d2]
+                d3++
+                d2++
+            }
+            console.log(data3)
+        
 
 
