@@ -408,6 +408,23 @@ class gun{
                 }
                 console.log(maxVal(array))
 
+//find max and min number into array using for loop
+                let array =[2321,3365,43,222,212,554,4671,623,1301]
+                function maax(arr){
+                  let max=arr[0]
+                  let secoundMax= -Infinity
+                  for(let i=0;i<arr.length;i++){
+                       if(arr[i]> max){
+                        secoundMax=max
+                       max = arr[i] 
+                      }else if(arr[i]>secoundMax && arr[i] < max){
+                         secoundMax = arr[i];
+                      }
+                  }
+                  return {max ,secoundMax}
+                }
+                console.log(maax(array))
+
 
 
   //find secound highest value
