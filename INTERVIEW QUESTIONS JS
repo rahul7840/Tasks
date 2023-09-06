@@ -15,8 +15,10 @@
 // let c=10;
 
 // let d= false
+// let dd= true
 
-// console.log(c+d)  //o/p => 11
+// console.log(c+d)    // o/p => 10
+// console.log(c+dd)   // o/p => 11
 
  
 
@@ -25,6 +27,7 @@
 // let f ={ name:"rahul"}
 
 // console.log(...e)  array distructuring
+--> if we check the type of array would not change if do impliment the spread oprater
 
  
 
