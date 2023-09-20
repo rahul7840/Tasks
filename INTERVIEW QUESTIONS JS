@@ -813,6 +813,54 @@ class gun{
                         }
                         console.log(`table is ->`, Gtabel(takeNum) )
 
+      //objects with a gender other than "male" and then tries to remove those objects from the aaray
+
+                    let aaray =[
+                                {name:"rahul",gender:"male"},
+                                {name:"janvi",gender:"female"},
+                                {name:"john",gender:"male"},
+                                {name:"wick",gender:"female"}
+                              ]
+
+                    var count = 0
+                    aaray.forEach((ele)=>{
+                        if(ele.gender !=='male'){
+                           count++ 
+                        }
+                    })
+                    
+                    for(var i=1;i<count;i++){
+                    for(var j=0;j<aaray.length;j++){
+                         if(aaray[j].gender!=="male"){
+                            aaray.splice(j,1);
+                            i--;
+                         }
+                    }}
+                    
+                    console.log(aaray)
+
+      //shuffle the array
+
+                var aAa = [1, 2, 3, 4, 5];
+                
+                function shuffle(arr) {
+                  var totalShuffle = arr.length;
+                
+                  while (totalShuffle > 0) {
+                    totalShuffle--;
+                
+                    var indexToExchange = Math.floor(Math.random() * totalShuffle);
+                
+                    var temp = arr[totalShuffle];
+                    arr[totalShuffle] = arr[indexToExchange];
+                    arr[indexToExchange] = temp;
+                  }
+                
+                  return arr;
+                }
+                
+                console.log("-->", shuffle(aAa));
+
 
 */
 
