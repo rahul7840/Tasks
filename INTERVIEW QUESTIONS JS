@@ -861,6 +861,43 @@ class gun{
                 
                 console.log("-->", shuffle(aAa));
 
+       // if you want to find the elements that are common between them.
+
+            var aar1 = [1, 2, 3, 45, 5, 4];
+            var aar2 = [2, 3, 4, 5, 4, 67, 8, 3];
+            
+            function uni(a, b) {
+                let uniA = [];
+                for (let i = 0; i < a.length; i++) {
+                    for (let j = 0; j < b.length; j++) {
+                        if (a[i] === b[j]) {
+                            uniA.push(a[i]);
+                            break; //--> break out of the inner loop
+                        }
+                    }
+                }
+                return uniA;
+            }
+            
+            console.log("--->", uni(aar1, aar2));
+
+      //sum of array wihout using forEach
+
+
+          var aar11 =[1,2,3,45,5,4];
+          var sum =0
+          function summ(val){
+          
+              for(let i=0;i<val.length;i++){
+                  if(typeof val[i] === 'number' ){
+                  sum=sum+val[i] 
+                      }else{return NaN}  
+                }
+          
+          return sum
+          }
+          console.log("totel sum of array is -->  ",summ(aar11))
+
 
 */
 
