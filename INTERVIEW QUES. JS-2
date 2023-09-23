@@ -1,0 +1,34 @@
+  ★ if we dont pass value to the function then it will returns the default value that is
+   UNDEFINE
+i.e
+    function eetter(val){
+    }
+    eetter();            o/p undefined
+
+
+
+  ★ write js function to get first elemet of an array  passing a para 'n' will return first 'n' of array
+     like if you pass getter([1,2,30)] -> 1     OR    getter([1,2,30),2] -> [1,2]
+  i.e  
+      function eetter(val,n=1){
+          let clown = []
+          for(i=0;i<n;i++){
+              clown.push(val[i])
+          }
+          return clown;
+         
+      }
+      console.log("----> ", eetter([1,2,34,45,5],2)
+
+
+
+   ★ In js 1> .1 + .2 =0.30
+            2> [] +[] = ''
+            3> typeof NaN = number
+
+
+
+    ★ HOF (higher order function)
+      jab function apne paramiter me hi function le wo sab higher ofder function he! or function return function tobhi vo HOF he 
+      like map ,filetr ,reduce
+            
