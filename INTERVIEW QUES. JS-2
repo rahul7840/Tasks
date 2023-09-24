@@ -28,7 +28,32 @@ i.e
 
 
 
-    ★ HOF (higher order function)
+   ★ HOF (higher order function)
       jab function apne paramiter me hi function le wo sab higher ofder function he! or function return function tobhi vo HOF he 
       like map ,filetr ,reduce
+
+
+   ★ If any program couse to change the value of Array than that is MUTABLE           --> i.e splice
+       If any program not-couse to change the value of Array than that is IMMUTABLE   --> i.e slice
+
+
+
+   ★ How to delete property of any onject 
+      var obj ={
+             name: "rrr",
+             age: 3
+            }
+      Delete obj.name
+
+
+   ★ How to make anyy object to immuteble 
+       var obj ={
+             name: "rrr",
+             age: 3
+            }
+
+       Object.frees(obj)
+
+
+  ★
             
